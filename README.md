@@ -23,10 +23,10 @@ HTML file:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding CSS Example</title>
 
-    <!-- 1. External CSS Link Method (Highly Recommended) -->
+    External CSS Link Method (Highly Recommended)
     <link rel="stylesheet" href="style.css">
 
-    <!-- 2. Internal CSS Method -->
+    Internal CSS Method
     <style>
         h2 {
             color: blue;
@@ -36,7 +36,7 @@ HTML file:
 </head>
 <body>
 
-    <!-- 3. Inline CSS Method -->
+    3. Inline CSS Method 
     <h1 style="color: red; font-size: 32px;">This is Inline CSS</h1>
 
     <h2>This is Internal CSS</h2>
@@ -118,42 +118,42 @@ HTML file:
 
 CSS with selectors:
 
-/* 1. Universal Selector - Targets everything on the page */
+1. Universal Selector - Targets everything on the page 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. Element Selector - Targets all h2 tags */
+2. Element Selector - Targets all h2 tags 
 h2 {
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-/* 3. Class Selector - Targets any element with class="highlight" */
+3. Class Selector - Targets any element with class="highlight" 
 .highlight {
     background-color: yellow;
     font-weight: bold;
 }
 
-/* 4. ID Selector - Targets the single element with id="main-title" */
+4. ID Selector - Targets the single element with id="main-title" 
 #main-title {
     text-align: center;
     color: darkblue;
 }
 
-/* 5. Group Selector - Applies identical styles to both .btn and h2 */
+5. Group Selector - Applies identical styles to both .btn and h2
 .btn, h2 {
     text-transform: uppercase;
 }
 
-/* 6. Descendant Selector - Targets ANY span inside a .card */
+6. Descendant Selector - Targets ANY span inside a .card 
 .card span {
     color: red;
 }
 
-/* 7. Child Selector - Targets ONLY a p that is a direct immediate child of .card */
+7. Child Selector - Targets ONLY a p that is a direct immediate child of .card
 .card > p {
     line-height: 1.5;
 }
@@ -261,27 +261,27 @@ No, it only affects the color value of the specific property it is assigned to.
 
 ## Code Task:
 
-/* 1. Named Color (Closest match approximate) */
+1. Named Color (Closest match approximate) 
 .orange-named {
     color: darkorange;
 }
 
-/* 2. HEX Format */
+2. HEX Format 
 .orange-hex {
     color: #F97316;
 }
 
-/* 3. RGB Format */
+3. RGB Format 
 .orange-rgb {
     color: rgb(249, 115, 22);
 }
 
-/* 4. RGBA Format */
+4. RGBA Format 
 .orange-rgba {
     color: rgba(249, 115, 22, 1.0);
 }
 
-/* 5. HSL Format */
+5. HSL Format 
 .orange-hsl {
     color: hsl(25, 95%, 53%);
 }
@@ -352,8 +352,8 @@ html {
 }
 
 .hero-section {
-    width: 100vw;               /* Full width of the viewport screen */
-    height: 100vh;              /* Full height of the viewport screen */
+    width: 100vw;               Full width of the viewport screen 
+    height: 100vh;              Full height of the viewport screen 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,14 +362,14 @@ html {
 }
 
 .hero-title {
-    font-size: 4vw;             /* Title scales fluidly based on display width */
-    margin-bottom: 2rem;        /* 2 * 16px = 32px spacing */
+    font-size: 4vw;             Title scales fluidly based on display width
+    margin-bottom: 2rem;        2 * 16px = 32px spacing
 }
 
 .hero-card {
-    width: 90%;                 /* Takes 90% width on smaller mobile screens */
-    max-width: 40rem;           /* Cap container width at 640px (40 * 16px) */
-    padding: 1.5rem;            /* Scales uniformly with root adjustments */
+    width: 90%;                 Takes 90% width on smaller mobile screens
+    max-width: 40rem;           Cap container width at 640px (40 * 16px)
+    padding: 1.5rem;            Scales uniformly with root adjustments
     background: #ffffff;
 }
 
@@ -422,17 +422,17 @@ Answer: It overrides all weights. This includes styles applied directly to a lin
 
 # Code Task
 
-/* Rule A: Element Selector | Score: (0, 0, 0, 1) */
+Rule A: Element Selector | Score: (0, 0, 0, 1)
 p {
     color: red;
 }
 
-/* Rule B: Class Selector | Score: (0, 0, 1, 0) */
+Rule B: Class Selector | Score: (0, 0, 1, 0)
 .text {
     color: blue;
 }
 
-/* Rule C: ID Selector | Score: (0, 1, 0, 0) */
+Rule C: ID Selector | Score: (0, 1, 0, 0)
 #intro {
     color: green;
 }
@@ -509,17 +509,17 @@ CSS:
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Pushes logo left, navigation links right */
-    align-items: center;            /* Centers items vertically */
+    justify-content: space-between; Pushes logo left, navigation links right
+    align-items: center;            Centers items vertically
     padding: 1rem 2rem;
     background-color: #2c3e50;
     color: white;
 }
 
 .nav-links {
-    display: flex;                  /* Arranges links horizontally */
+    display: flex;                  Arranges links horizontally 
     list-style: none;
-    gap: 1.5rem;                    /* Creates consistent spacing between items */
+    gap: 1.5rem;                    Creates consistent spacing between items
 }
 
 .nav-links a {
@@ -584,7 +584,7 @@ HTML:
 
 CSS:
 
-/* 1. Pseudo-class: Hover state turns button orange */
+1. Pseudo-class: Hover state turns button orange
 .action-btn {
     padding: 0.5rem 1rem;
     background-color: blue;
@@ -595,20 +595,20 @@ CSS:
     background-color: #F97316; /* Orange color */
 }
 
-/* 2. Pseudo-element: Injecting a star symbol before featured items */
+2. Pseudo-element: Injecting a star symbol before featured items
 .featured::before {
     content: "★ ";
     color: #F97316;
     font-weight: bold;
 }
 
-/* 3. Pseudo-element: Styling form placeholder input text gray */
+3. Pseudo-element: Styling form placeholder input text gray
 .custom-input::placeholder {
     color: #888888;
     font-style: italic;
 }
 
-/* 4. Pseudo-class Demonstration: Styling every 3rd list item */
+4. Pseudo-class Demonstration: Styling every 3rd list item
 .list-group li:nth-child(3n) {
     background-color: #f0f0f0;
 }
@@ -689,15 +689,15 @@ HTML:
 
 CSS:
 
-/* Define Keyframe Animation for Fading and Lifting on Page Load */
+Define Keyframe Animation for Fading and Lifting on Page Load
 @keyframes fadeInFromBelow {
     0% {
         opacity: 0;
-        transform: translateY(30px); /* Start 30px lower */
+        transform: translateY(30px);     Start 30px lower 
     }
     100% {
         opacity: 1;
-        transform: translateY(0);    /* Land at normal layout place */
+        transform: translateY(0);        Land at normal layout place 
     }
 }
 
@@ -708,17 +708,17 @@ CSS:
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
-    /* 1. Page Load Animation execution setup */
+    1. Page Load Animation execution setup
     animation: fadeInFromBelow 0.8s ease-out forwards;
     
-    /* 2. Transition setup for Hover State Interaction */
+    2. Transition setup for Hover State Interaction
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Interactive Trigger state changes smoothly using transitions */
+ Hover Interactive Trigger state changes smoothly using transitions
 .card:hover {
-    transform: translateY(-8px); /* Smoothly lifts card upward */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhances shadow depth */
+    transform: translateY(-8px);  Smoothly lifts card upward
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);   Enhances shadow depth
 }
 
 
@@ -772,36 +772,36 @@ Answer: var(--color) read the custom variable value. If that variable isn't defi
 
 ## Code Task:
 
-/* ==========================================================================
+
    1. ROOT DESIGN SYSTEM DEFINITION (Default Light Theme Setup)
-   ========================================================================== */
+  
 :root {
-    /* Color Palette */
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --primary-color: #3498db;
+    Color Palette 
+    background-color: #ffffff;
+    text-color: #333333;
+    primary-color: #3498db;
     
-    /* Typography Sizing System */
-    --font-main: 1rem;
-    --font-heading: 1.5rem;
+    Typography Sizing System
+    font-main: 1rem;
+    font-heading: 1.5rem;
     
-    /* Spacing System Layouts */
-    --spacing-layout: 1rem;
+    Spacing System Layouts
+    spacing-layout: 1rem;
 }
 
-/* ==========================================================================
+
    2. DARK THEME OVERRIDES IMPLEMENTATION
-   ========================================================================== */
-/* Activates when HTML root matches data-theme attribute choice rule */
+  
+Activates when HTML root matches data-theme attribute choice rule 
 [data-theme='dark'] {
-    --background-color: #121212;
-    --text-color: #f5f5f5;
-    --primary-color: #e74c3c;
+    background-color: #121212;
+    text-color: #f5f5f5;
+    primary-color: #e74c3c;
 }
 
-/* ==========================================================================
+
    3. MOBILE-FIRST BASE STYLES APPLIED (Default Layout targets Mobile)
-   ========================================================================== */
+  
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -817,29 +817,28 @@ body {
     gap: var(--spacing-layout);
 }
 
-/* ==========================================================================
-   4. RESPONSIVE MOBILE-FIRST MEDIA QUERIES BREAKPOINTS
-   ========================================================================== */
 
-/* Tablet Viewport Breakpoint Activation (Screen width >= 768px) */
+   4. RESPONSIVE MOBILE-FIRST MEDIA QUERIES BREAKPOINTS
+   
+Tablet Viewport Breakpoint Activation (Screen width >= 768px) 
 @media (min-width: 768px) {
     :root {
-        --font-heading: 2rem;
-        --spacing-layout: 1.5rem;
+        font-heading: 2rem;
+        spacing-layout: 1.5rem;
     }
     .container {
-        flex-direction: row; /* Shift to row distribution side-by-side layout layout */
+        flex-direction: row; Shift to row distribution side-by-side layout layout 
     }
 }
 
-/* Desktop Viewport Breakpoint Activation (Screen width >= 1024px) */
+Desktop Viewport Breakpoint Activation (Screen width >= 1024px)
 @media (min-width: 1024px) {
     :root {
-        --font-heading: 2.5rem;
-        --spacing-layout: 2rem;
+        font-heading: 2.5rem;
+        spacing-layout: 2rem;
     }
     body {
         max-width: 1200px;
-        margin: 0 auto; /* Center page layout container boundaries nicely on wide monitors */
+        margin: 0 auto;  Center page layout container boundaries nicely on wide monitors 
     }
 }
